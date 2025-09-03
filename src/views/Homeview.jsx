@@ -9,19 +9,20 @@ import Port from '../components/Port'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
+
 const Homeview = () => {
   return (
     <>
-      <Skip />
-      <Header />
-      <Main >
-        <Intro />
-        <Skill />
-        <Site />
-        <Port />
-        <Contact />
-      </Main>
-      <Footer />
+        <Skip />
+        <Header />
+        <Main>
+            <Intro />
+            <Skill />
+            <Site />
+            <Port />
+            <Contact />
+        </Main>        
+        <Footer />
     </>
   )
 }

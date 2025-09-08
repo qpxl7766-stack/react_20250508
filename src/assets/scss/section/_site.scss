@@ -4,33 +4,37 @@
 
     .site_title{
 
-        @media (max-width:800px){
+        @media(max-width:800px){
             font-size: 30px;
             height: auto;
         }
+
+
         position: sticky;
         top: 90px;
+        left: 0;
         width: 70%;
         height: 5vw;
+        background-color: var(--mainBg-color);
         font-size: 3vw;
         font-family: var(--mainNum-font);
         text-transform: uppercase;
-        background-color: var(--mainBg-color);
 
         em{
             font-size: 20px;
         }
     }
     .site_wrap{
-        
+
         .site_item{
-            //박스 고정
+            //박스고정
             height: 70vh;
             position: sticky;
             left: 0;
+
+            //자식들 정렬
             @include flex-center;
             flex-direction: column;
-            // 자식들 정렬
 
             &.s1{
                 background-color: var(--subBg100);
@@ -66,27 +70,26 @@
                 top: 1vw;
                 left: 1vw;
 
-                @media (max-width:800px) {
-                        font-size: 30px;
-                        left: 20px;
-                        top: 20px;
-                    }
+                @media(max-width:800px){
+                    font-size: 30px;
+                    left: 20px;
+                    top: 20px;
                 }
+            }
             .text{
                 margin-bottom: 16px;
 
-                div{
+                >div{
                     font-size: 3vw;
-                    font-weight: 800;
+                    font-weight: 600;
                     text-align: center;
                     text-transform: uppercase;
                     line-height: 1.1;
                     text-decoration: underline;
 
-                    @media (max-width:800px) {
+                    @media(max-width:800px){
                         font-size: 25px;
                     }
-                }
                 }
             }
             .title{
@@ -118,13 +121,12 @@
                 left: 0;
                 bottom: 3%;
                 display: flex;
-                background-color: var(--mainBg-color);
-                display: flex;
                 width: 100%;
                 justify-content: space-between;
                 padding: 0 1%;
                 border-top: 1px solid var(--black);
                 border-bottom: 1px solid var(--black);
+                //background-color: var(--mainBg-color);
 
                 span{
                     font-family: var(--mainKor-font);
@@ -132,6 +134,6 @@
                     padding: 3px 0;
                 }
             }
-        }
-        
+        }      
     }
+}

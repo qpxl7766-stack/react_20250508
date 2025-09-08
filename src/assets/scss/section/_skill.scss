@@ -4,16 +4,17 @@
     justify-content: space-between;
     padding: 16px;
 
-    @media (max-width:800px){
+    @media(max-width:800px){
         flex-direction: column;
     }
 
     .skill_title{
 
-        @media (max-width:800px){
+        @media(max-width:800px){
             width: 100%;
             font-size: 30px;
             background-color: var(--mainBg-color);
+            top: 76px;
         }
 
         width: 48%;
@@ -21,9 +22,8 @@
         font-size: 3vw;
         font-family: var(--mainNum-font);
         text-transform: uppercase;
-
         position: sticky;
-        top: 76px;
+        top: 90px;
         left: 0;
 
         em{
@@ -32,11 +32,12 @@
     }
     .skill_desc{
 
-        @media (max-width:800px){
+        @media(max-width:800px){
             width: 100%;
         }
 
         width: 50%;
+
         span{
             font-size: 5vw;
             font-weight: 800;
